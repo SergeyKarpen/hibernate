@@ -62,5 +62,12 @@ public class Developer {
         this.account = account;
     }
 
-
+    @Override
+    public String toString() {
+        return "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", skills=" + skills +
+                ", account=" + account;
+    }
 }

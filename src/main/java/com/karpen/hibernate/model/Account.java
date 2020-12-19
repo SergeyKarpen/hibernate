@@ -8,13 +8,13 @@ public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id_account",unique = true, nullable = false)
+    @Column(name = "id",unique = true, nullable = false)
     private Long id;
 
     @Column (name="content")
     private String content;
 
-    @Column(name = "accountStatus")
+    @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private AccountStatus accountStatus;
 
