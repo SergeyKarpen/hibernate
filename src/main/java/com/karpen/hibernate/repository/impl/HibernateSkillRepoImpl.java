@@ -81,7 +81,7 @@ public class HibernateSkillRepoImpl implements HibernateSkillRepo {
             }
         }
     }
-      /*
+
     public Skill getById(Long id_skill) {
         Skill skill = null;
         try {
@@ -96,5 +96,5 @@ public class HibernateSkillRepoImpl implements HibernateSkillRepo {
         }
         return skill;
     }
-   */
+
 }

@@ -18,10 +18,10 @@ public class Developer {
     @Column(name = "lastName")
     private String lastName;
 
-    @ManyToMany(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
     private Set<Skill> skills;
 
-    @OneToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+    @OneToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
     private Account account;
 
     public Developer() {}

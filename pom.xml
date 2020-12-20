@@ -11,10 +11,24 @@
     <properties>
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
+        <!-- Properties are prefixed with flyway. -->
+        <flyway.user>postgres</flyway.user>
+        <flyway.password>paranido2</flyway.password>
+
+        <!-- List are defined as comma-separated values -->
+        <flyway.schemas>Skill,Account,Developer</flyway.schemas>
+
+        <!-- Individual placeholders are prefixed by flyway.placeholders. -->
+        <flyway.placeholders.keyABC>valueXYZ</flyway.placeholders.keyABC>
+        <flyway.placeholders.otherplaceholder>value123</flyway.placeholders.otherplaceholder>
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.googlecode.flyway</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>1.5</version>
+        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -78,13 +92,27 @@
             <type>pom</type>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.wildfly.swarm/flyway -->
-        <dependency>
-            <groupId>org.wildfly.swarm</groupId>
-            <artifactId>flyway</artifactId>
-            <version>2018.5.0</version>
-        </dependency>
-
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.googlecode.flyway</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>1.5</version>
+                <configuration>
+                    <user>postgres</user>
+                    <password>paranido2</password>
+                    <driver>org.postgresql.Driver</driver>
+                    <url>jdbc:postgresql://localhost:5432/hibernate?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;connectionCollation=utf8_general_ci&amp;characterSetResults=UTF-8</url>
+                    <baseDir>db/migration</baseDir>
+                    <schemas>
+                        <schema>Skill</schema>
+                        <schema>Account</schema>
+                        <schema>Developer</schema>
+                    </schemas>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

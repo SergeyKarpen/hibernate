@@ -1,6 +1,7 @@
 package com.karpen.hibernate.repository.impl;
 
 import com.karpen.hibernate.model.Account;
+import com.karpen.hibernate.model.Skill;
 import com.karpen.hibernate.repository.HibernateAccountRepo;
 import com.karpen.hibernate.util.HibernateSessionFactory;
 import org.hibernate.Session;
@@ -79,5 +80,20 @@ public class HibernateAccountRepoImpl implements HibernateAccountRepo {
                 session.close();
             }
         }
+    }
+
+    public Account getById(Long id_account) {
+        Account account = null;
+        try {
+            session = HibernateSessionFactory.getSessionFactory().openSession();
+            account = session.load(Account.class, id_account);
+        } catch (Throwable ex) {
+            System.err.println("Ошибка при нахождении учетки(account). Метод getById - ERROR " + ex);
+        } finally {
+            if (session != null && session.isOpen()) {
+                session.close();
+            }
+        }
+        return account;
     }
 }

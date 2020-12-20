@@ -21,10 +21,9 @@ public class DeveloperController {
         Set<Skill> skills = new HashSet<>();
         developer.setFirstName(firstName);
         developer.setLastName(lastName);
-       // developer.setId(hibernateAccountRepo.lastId());
-      //  developer.setAccount(hibernateAccountRepo.getById(id_account));
+        developer.setAccount(hibernateAccountRepo.getById(id_account));
         for (Long aLong : skillId) {
-     //       skills.add(hibernateSkillRepo.getById(aLong));
+            skills.add(hibernateSkillRepo.getById(aLong));
         }
         developer.setSkills(skills);
         return hibernateDeveloperRepo.create(developer);
@@ -36,9 +35,9 @@ public class DeveloperController {
         developer.setFirstName(firstname);
         developer.setLastName(lastName);
         developer.setId(id);
-       // developer.setAccount(hibernateAccountRepo.getById(id_account));
+        developer.setAccount(hibernateAccountRepo.getById(id_account));
         for (Long aLong : skillId) {
-      //      skills.add(hibernateSkillRepo.getById(aLong));
+            skills.add(hibernateSkillRepo.getById(aLong));
         }
         developer.setSkills(skills);
         return hibernateDeveloperRepo.update(developer);

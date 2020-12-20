@@ -21,6 +21,7 @@
         <property name="hibernate.connection.password">
             paranido2
         </property>
+        <property name=""></property>
         <property name="hibernate.hbm2ddl.auto">create</property>
         <mapping class="com.karpen.hibernate.model.Skill"/>
         <mapping class="com.karpen.hibernate.model.Developer"/>
