@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5739a4d-d35b-43a9-bb30-2017ef6df95d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/codecov.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +174,7 @@
       <updated>1608385696648</updated>
       <workItem from="1608385699425" duration="4630000" />
       <workItem from="1608465440562" duration="11882000" />
-      <workItem from="1608541337462" duration="13292000" />
+      <workItem from="1608541337462" duration="14114000" />
     </task>
     <servers />
   </component>
