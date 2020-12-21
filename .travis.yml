@@ -6,7 +6,7 @@ jdk:
 before_script:
   - echo "Build started"
 script:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn package
 after_script:
   - echo "Script finished"
 after_success:
