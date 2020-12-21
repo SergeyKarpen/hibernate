@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SkillController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">hibernate</a> &gt; <a href="index.source.html" class="el_package">com.karpen.hibernate.controller</a> &gt; <span class="el_source">SkillController.java</span></div><h1>SkillController.java</h1><pre class="source lang-java linenums">package com.karpen.hibernate.controller;
+
+import com.karpen.hibernate.model.Skill;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.karpen.hibernate.repository.impl.*;
+
+<span class="nc" id="L11">public class SkillController {</span>
+
+<span class="nc" id="L13">    private final HibernateSkillRepoImpl hibernateSkillRepo = new HibernateSkillRepoImpl();</span>
+
+
+    public void create(String name) throws IOException, SQLException {
+<span class="nc" id="L17">        Skill skill = new Skill();</span>
+<span class="nc" id="L18">        skill.setName(name);</span>
+<span class="nc" id="L19">        hibernateSkillRepo.create(skill);</span>
+<span class="nc" id="L20">    }</span>
+
+    public Skill update(Long id, String name) throws IOException, SQLException {
+<span class="nc" id="L23">        Skill skill = new Skill();</span>
+<span class="nc" id="L24">        skill.setName(name);</span>
+<span class="nc" id="L25">        skill.setId(id);</span>
+<span class="nc" id="L26">        return hibernateSkillRepo.update(skill);</span>
+    }
+/*
+    public Skill getById(Long id) throws IOException, SQLException {
+        return hibernateSkillRepo.getById(id);
+    }
+
+ */
+
+    public void deleteById(Long id) throws IOException, SQLException {
+<span class="nc" id="L36">        hibernateSkillRepo.deleteById(id);</span>
+<span class="nc" id="L37">    }</span>
+
+    public List&lt;Skill&gt; getAll() throws IOException, SQLException {
+<span class="nc" id="L40">        return hibernateSkillRepo.getAll();</span>
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
