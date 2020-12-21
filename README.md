@@ -1,2 +1,2 @@
-[![Build Status](https://travis-ci.com/SergeyKarpen/travis-ci-tutorial-java.svg?branch=master)](https://travis-ci.com/joaomlneto/travis-ci-tutorial-java)
-[![Code Coverage](https://codecov.io/github/SergeyKarpen/travis-ci-tutorial-java/coverage.svg)](https://codecov.io/gh/joaomlneto/travis-ci-tutorial-java)	[![Code Coverage](https://codecov.io/github/joaomlneto/travis-ci-tutorial-java/coverage.svg)](https://codecov.io/gh/joaomlneto/travis-ci-tutorial-java)
+[![Build Status](https://travis-ci.com/SergeyKarpen/hibernate?branch=master)](https://travis-ci.com/SergeyKarpen/hibernate)
+[![Code Coverage](https://codecov.io/github/SergeyKarpen/hibernate/coverage.svg)](https://codecov.io/gh/SergeyKarpen/hibernate)	[![Code Coverage](https://codecov.io/github/SergeyKarpen/hibernate/coverage.svg)](https://codecov.io/gh/SergeyKarpen/hibernate)
