@@ -2,7 +2,6 @@ language: java
 
 before_script:
   - echo "Build started"
-script:
   script: mvn package -DskipTests
 after_script:
   - echo "Script finished"
