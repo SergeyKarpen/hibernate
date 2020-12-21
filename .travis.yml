@@ -1,8 +1,11 @@
 language: java
 
+jdk:
+  - openjdk8
+
 before_script:
   - echo "Build started"
-  script: mvn package -DskipTests
+script: mvn package -DskipTests
 after_script:
   - echo "Script finished"
 after_success:
