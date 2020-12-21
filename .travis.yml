@@ -1,5 +1,6 @@
 language: java
 
+os: windows
 jdk:
   - openjdk8
 
@@ -11,7 +12,7 @@ after_script:
   - echo "Script finished"
 after_success:
   - echo "Build was successful. $TRAVIS_TEST_RESULT"
-  - export CODECOV_TOKEN="14e92a7d-7b42-4409-bd47-4cccc6858fef"
+  - echo "14e92a7d-7b42-4409-bd47-4cccc6858fef" > .cc_token
   - bash <(curl -s https://codecov.io/bash)
 after_failure:
   - echo "Build was failed"
