@@ -1,6 +1,9 @@
 language: java
+
+
 before_script:
   - echo "Build started"
+  - cat codecov.yml | curl --data-binary @- https://codecov.io/validate
 script:
   - mvn package
 after_script:
