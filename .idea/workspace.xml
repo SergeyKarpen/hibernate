@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5739a4d-d35b-43a9-bb30-2017ef6df95d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codecov.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-    </list>
+    <list default="true" id="b5739a4d-d35b-43a9-bb30-2017ef6df95d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,9 +41,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3264368" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -92,12 +88,6 @@
     </configuration>
     <configuration name="HibernateAccountRepoImplTest.deleteById_return_throw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hibernate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.karpen.hibernate.repository.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="com.karpen.hibernate.repository.impl" />
       <option name="MAIN_CLASS_NAME" value="com.karpen.hibernate.repository.impl.HibernateAccountRepoImplTest" />
       <option name="METHOD_NAME" value="deleteById_return_throw" />
@@ -174,7 +164,7 @@
       <updated>1608385696648</updated>
       <workItem from="1608385699425" duration="4630000" />
       <workItem from="1608465440562" duration="11882000" />
-      <workItem from="1608541337462" duration="14114000" />
+      <workItem from="1608541337462" duration="14937000" />
     </task>
     <servers />
   </component>
