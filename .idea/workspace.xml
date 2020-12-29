@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5739a4d-d35b-43a9-bb30-2017ef6df95d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,29 +63,29 @@
       <command value="mvn clean flyway:migrate -D" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HibernateDeveloperRepoImplTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Run">
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.karpen.hibernate.Run" />
+      <module name="hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.karpen.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HibernateAccountRepoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hibernate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.karpen.hibernate.repository.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.karpen.hibernate.repository.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.karpen.hibernate.repository.impl.HibernateAccountRepoImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Run" />
         <item itemvalue="JUnit.HibernateDeveloperRepoImplTest" />
         <item itemvalue="JUnit.HibernateDeveloperRepoImplTest.getAll_return_developerList" />
         <item itemvalue="JUnit.HibernateDeveloperRepoImplTest.create" />
         <item itemvalue="JUnit.HibernateSkillRepoImplTest" />
-        <item itemvalue="JUnit.HibernateAccountRepoImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +176,8 @@
       <workItem from="1608990478142" duration="613000" />
       <workItem from="1609042881351" duration="1882000" />
       <workItem from="1609135503695" duration="760000" />
-      <workItem from="1609233659705" duration="3528000" />
+      <workItem from="1609233659705" duration="4782000" />
+      <workItem from="1609241434409" duration="391000" />
     </task>
     <servers />
   </component>
