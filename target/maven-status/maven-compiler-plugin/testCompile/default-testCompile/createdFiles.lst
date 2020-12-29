@@ -1,4 +1,0 @@
-Main.class
-com\karpen\hibernate\repository\impl\HibernateSkillRepoImplTest.class
-com\karpen\hibernate\repository\impl\HibernateAccountRepoImplTest.class
-com\karpen\hibernate\repository\impl\HibernateDeveloperRepoImplTest.class
