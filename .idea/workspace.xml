@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5739a4d-d35b-43a9-bb30-2017ef6df95d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +176,7 @@
       <workItem from="1608990478142" duration="613000" />
       <workItem from="1609042881351" duration="1882000" />
       <workItem from="1609135503695" duration="760000" />
-      <workItem from="1609233659705" duration="2882000" />
+      <workItem from="1609233659705" duration="3528000" />
     </task>
     <servers />
   </component>
